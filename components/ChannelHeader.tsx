@@ -1,0 +1,15 @@
+
+import React from 'react';
+
+const HashIcon = ({ className }: { className?: string }) => (
+  <svg aria-hidden="true" role="img" className={className} width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L3.10259 10.4138C3.15613 10.1078 3.43723 9.87499 3.74784 9.87499H7.15272L7.88657 5.00001C7.94094 4.69371 8.22153 4.49999 8.53264 4.49999H12.0093C12.3204 4.49999 12.556 4.78109 12.5016 5.08739L11.8959 9.00001H15.4049C15.7155 9.00001 15.951 9.28016 15.8974 9.58618L14.8974 15.5862C14.8439 15.8922 14.5628 16.125 14.2522 16.125H10.8473L10.1134 20.9999C10.0591 21.3062 9.77848 21.5 9.46737 21.5H5.88657V21ZM8.00001 16.125H12.1527L14.0001 5.37499H9.84728L8.00001 16.125ZM6.84728 10.75L8.69456 0.87501H13.1528L12.2801 6.87501H16.5951L17.8974 0L22.1026 3.58618L21.1026 9.58618H16.8473L16.1134 14.125H20.2522L19.2522 20.125H14.8959L13.1527 10.75H8.69456L6.84728 20.625H2.39999L3.27272 14.625H7.53264L6.84728 10.75Z" transform="translate(0 -0.5)"></path></svg>
+);
+
+const ChannelHeader = () => (
+  <header className="flex-shrink-0 flex items-center h-12 px-4 shadow-md bg-[#36393f] border-b border-black/20">
+    <HashIcon className="w-6 h-6 text-gray-500" />
+    <h1 className="ml-2 font-semibold text-white">general</h1>
+  </header>
+);
+
+export default ChannelHeader;
